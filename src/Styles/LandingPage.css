@@ -1,0 +1,45 @@
+.landing-page {
+	height: 100vh;
+	background: url(../Assets/hero-image.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: white;
+}
+
+.overlay {
+	background-color: rgba(0, 0, 0, 0.7);
+	height: 100%;
+}
+
+.presentation-text {
+	font-size: large;
+	font-weight: bolder;
+}
+
+.cta-button {
+	border: none;
+	background-color: rgba(2, 147, 130);
+	padding: 15px 25px;
+	width: fit-content;
+	height: fit-content;
+	margin-top: 10px;
+	font-size: large;
+	font-weight: bolder;
+}
+
+.cta-button:hover {
+	cursor: pointer;
+	opacity: 0.9;
+}
+
+.content-wrapper {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	z-index: 5;
+	overflow: auto;
+}
