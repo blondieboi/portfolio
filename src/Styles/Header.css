@@ -9,12 +9,14 @@
 	color: white;
 }
 
-.title-wrapper,
 .links-wrapper,
 .hamburger-wrapper {
-	padding: 0px 30px;
+	padding-right: 70px;
 }
 
+.title-wrapper {
+	padding-left: 70px;
+}
 .links-wrapper {
 	display: flex;
 }
@@ -25,7 +27,7 @@
 }
 
 .links-wrapper > p {
-	padding-left: 20px;
+	padding-left: 30px;
 	font-weight: bolder;
 	text-decoration: underline;
 }

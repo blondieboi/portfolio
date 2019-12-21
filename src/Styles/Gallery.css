@@ -7,34 +7,9 @@ img {
 	width: 49.999999%;
 }
 
-.image1 {
-	background: url(../Assets/Gallery/image1.png);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-clip: border-box;
-	background-size: cover;
-	height: auto;
-}
-.image2 {
-	background: url(../Assets/Gallery/image2.png);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-clip: border-box;
-	background-size: cover;
-}
-.image3 {
-	background: url(../Assets/Gallery/image3.png);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-clip: border-box;
-	background-size: cover;
-}
-.image4 {
-	background: url(../Assets/Gallery/image4.png);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-clip: border-box;
-	background-size: cover;
+img:hover {
+	cursor: pointer;
+	opacity: 0.95;
 }
 
 @media only screen and (max-width: 1025px) {
