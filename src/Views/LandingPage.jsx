@@ -2,10 +2,6 @@ import React from "react";
 import "../Styles/LandingPage.css";
 import $ from "jquery";
 
-const scrollToEl = () => {
-	document.getElementById("gallery").scrollIntoView({ behavior: "smooth" });
-};
-
 const LandingPage = () => {
 	$(window).scroll(function() {
 		$(".content-wrapper").css("opacity", 1 - $(window).scrollTop() / 150);
@@ -19,7 +15,14 @@ const LandingPage = () => {
 						Working as the main 2d artistist of a production team creating
 						everything from concepts to final ingame assets.
 					</div>
-					<div className="cta-button" onClick={scrollToEl}>
+					<div
+						className="cta-button"
+						onClick={() => {
+							document
+								.getElementById("gallery")
+								.scrollIntoView({ behavior: "smooth" });
+						}}
+					>
 						Go to gallery
 					</div>
 				</div>

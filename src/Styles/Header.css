@@ -15,18 +15,22 @@
 	padding: 0px 30px;
 }
 
+.links-wrapper {
+	display: flex;
+}
+
 .title-wrapper:hover {
 	cursor: pointer;
 	opacity: 0.7;
 }
 
-.links-wrapper > a {
+.links-wrapper > p {
 	padding-left: 20px;
 	font-weight: bolder;
 	text-decoration: underline;
 }
 
-a:hover {
+.links-wrapper > p:hover {
 	cursor: pointer;
 	opacity: 0.7;
 }

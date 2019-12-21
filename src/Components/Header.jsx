@@ -29,7 +29,7 @@ const Header = () => {
 				</h2>
 			</div>
 			<div className="links-wrapper">
-				<a
+				<p
 					onClick={() => {
 						document
 							.getElementById("gallery")
@@ -37,9 +37,9 @@ const Header = () => {
 					}}
 				>
 					Gallery
-				</a>
-				<a>Resume</a>
-				<a>Contact Me</a>
+				</p>
+				<p>Resume</p>
+				<p>Contact Me</p>
 			</div>
 			<div
 				className={`hamburger-wrapper ${!activeNav ? "change" : ""}`}
