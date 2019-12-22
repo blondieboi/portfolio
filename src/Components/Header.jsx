@@ -38,7 +38,15 @@ const Header = () => {
 				>
 					Gallery
 				</p>
-				<p>Resume</p>
+				<p
+					onClick={() => {
+						document
+							.getElementById("resume")
+							.scrollIntoView({ behavior: "smooth" });
+					}}
+				>
+					Resume
+				</p>
 				<p>Contact Me</p>
 			</div>
 			<div
@@ -60,7 +68,16 @@ const Header = () => {
 				>
 					Gallery
 				</p>
-				<p>Resume</p>
+				<p
+					onClick={() => {
+						document
+							.getElementById("resume")
+							.scrollIntoView({ behavior: "smooth" });
+						toggleNav();
+					}}
+				>
+					Resume
+				</p>
 				<p>Contact Me</p>
 			</div>
 		</div>

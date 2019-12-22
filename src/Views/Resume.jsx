@@ -7,7 +7,7 @@ import artstation from "../Assets/Social/artstation.png";
 
 const Resume = () => {
 	return (
-		<div className="resume-wrapper">
+		<div id="resume" className="resume-wrapper">
 			<div className="resume-header">
 				<div className="pic-wrapper">
 					<img src={pic} alt="" />
