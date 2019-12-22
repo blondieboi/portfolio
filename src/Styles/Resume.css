@@ -1,0 +1,59 @@
+.resume-wrapper {
+	padding: 20px 0px;
+	width: 80%;
+	margin: auto;
+}
+
+.resume-header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 0px 10px;
+}
+
+.resume-header > div {
+	padding: 15px 30px;
+}
+
+.resume-description {
+	max-width: 750px;
+	margin: auto;
+	padding: 15px 30px;
+}
+
+.pic-wrapper > img {
+	border-radius: 50%;
+	height: 30vw;
+	max-height: 170px;
+}
+
+.resume-text {
+	text-align: center;
+}
+
+.social-links-container {
+	padding: 15px 0px;
+}
+
+.social-links-container > img {
+	height: 40px;
+	padding: 0px 10px;
+}
+
+.social-links-container > img:hover {
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.cv-wrapper {
+	padding: 15px 30px;
+}
+
+.cv-item {
+	padding-top: 30px;
+}
+
+.cv-item-description {
+	padding-top: 10px;
+}

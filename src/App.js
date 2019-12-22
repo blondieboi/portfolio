@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./Components/Header";
 import LandingPage from "./Views/LandingPage";
 import Gallery from "./Views/Gallery";
+import Resume from "./Views/Resume";
 
 function App() {
 	return (
@@ -10,6 +11,7 @@ function App() {
 			<Header />
 			<LandingPage />
 			<Gallery />
+			<Resume />
 		</div>
 	);
 }
