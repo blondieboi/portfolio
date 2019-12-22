@@ -1,14 +1,9 @@
 import React from "react";
 import "../Styles/LandingPage.css";
-import $ from "jquery";
 
 const LandingPage = () => {
-	$(window).scroll(function() {
-		$(".content-wrapper").css("opacity", 1 - $(window).scrollTop() / 150);
-	});
-
 	return (
-		<div id="landing" className="landing-page">
+		<div id="landing" className="landing-page parallax">
 			<div className="overlay">
 				<div className="content-wrapper" id="mainContent">
 					<div className="presentation-text">

@@ -9,33 +9,15 @@ const images = importAll(
 );
 
 const imageGallery = images.map(image => (
-	<img
-		key={image}
-		alt={image}
-		src={image}
-		onClick={() => {
-			document.getElementById("modal").style.display = "block";
-			document.getElementById("modalImage").src = image;
-		}}
-		className="gallery-image"
-	/>
+	<a key={image} href={image} className="image-link">
+		<img alt={image} src={image} className="gallery-image" />
+	</a>
 ));
 
 const Gallery = () => {
 	return (
 		<div className="gallery-wrapper" id="gallery">
 			{imageGallery}
-			<div id="modal" className="modal">
-				<span
-					className="close"
-					onClick={() => {
-						document.getElementById("modal").style.display = "none";
-					}}
-				>
-					&times;
-				</span>
-				<img className="modal-content" id="modalImage" alt="modal-img" />
-			</div>
 		</div>
 	);
 };
