@@ -9,9 +9,11 @@ const Header = () => {
 		if (activeNav) {
 			document.getElementById("sideNav").style.visibility = "visible";
 			document.getElementById("mainContent").style.visibility = "hidden";
+			document.getElementById("resumeContent").style.visibility = "hidden";
 		} else {
 			document.getElementById("sideNav").style.visibility = "hidden";
 			document.getElementById("mainContent").style.visibility = "visible";
+			document.getElementById("resumeContent").style.visibility = "visible";
 		}
 	}
 
@@ -47,7 +49,6 @@ const Header = () => {
 				>
 					Resume
 				</p>
-				<p>Contact Me</p>
 			</div>
 			<div
 				className={`hamburger-wrapper ${!activeNav ? "change" : ""}`}
@@ -78,7 +79,6 @@ const Header = () => {
 				>
 					Resume
 				</p>
-				<p>Contact Me</p>
 			</div>
 		</div>
 	);

@@ -1,5 +1,9 @@
 .resume-wrapper {
 	padding: 20px 0px;
+	background: #e6f1af;
+}
+
+.resume-wrapper > div {
 	width: 80%;
 	margin: auto;
 }
@@ -36,12 +40,12 @@
 	padding: 15px 0px;
 }
 
-.social-links-container > img {
+.social-links-container a > img {
 	height: 40px;
 	padding: 0px 10px;
 }
 
-.social-links-container > img:hover {
+.social-links-container a > img:hover {
 	opacity: 0.7;
 	cursor: pointer;
 }
