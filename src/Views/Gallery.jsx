@@ -14,8 +14,8 @@ const imageGallery = images.map(image => (
 		alt={image}
 		src={image}
 		onClick={() => {
-			document.getElementById("myModal").style.display = "block";
-			document.getElementById("img01").src = image;
+			document.getElementById("modal").style.display = "block";
+			document.getElementById("modalImage").src = image;
 		}}
 		className="gallery-image"
 	/>
@@ -25,16 +25,16 @@ const Gallery = () => {
 	return (
 		<div className="gallery-wrapper" id="gallery">
 			{imageGallery}
-			<div id="myModal" className="modal">
+			<div id="modal" className="modal">
 				<span
 					className="close"
 					onClick={() => {
-						document.getElementById("myModal").style.display = "none";
+						document.getElementById("modal").style.display = "none";
 					}}
 				>
 					&times;
 				</span>
-				<img className="modal-content" id="img01" />
+				<img className="modal-content" id="modalImage" alt="modal-img" />
 			</div>
 		</div>
 	);
