@@ -7,7 +7,16 @@
 	z-index: 10;
 	background: rgba(0, 0, 0, 0.3);
 	color: white;
-	padding: 15px 0px;
+	height: 70px;
+	transition: top 0.1s ease-in-out;
+}
+
+.nav-up {
+	top: -70px;
+}
+
+.nav-down {
+	top: 0;
 }
 
 .links-wrapper,

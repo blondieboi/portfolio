@@ -1,8 +1,37 @@
 import React, { useState } from "react";
 import "../Styles/Header.css";
+import $ from "jquery";
 
 const Header = () => {
 	const [activeNav, setActiveNav] = useState(true);
+	var lastScrollTop = 0;
+	var delta = 5;
+	var navbarHeight = 70;
+
+	window.addEventListener(
+		"scroll",
+		function(e) {
+			hasScrolled();
+		},
+		true
+	);
+
+	function hasScrolled() {
+		var st = $(".view-wrapper").scrollTop();
+		if (Math.abs(lastScrollTop - st) <= delta) return;
+		if (st > lastScrollTop && st > navbarHeight && lastScrollTop !== 0) {
+			$("header")
+				.removeClass("nav-down")
+				.addClass("nav-up");
+		} else {
+			if (st - lastScrollTop < 0) {
+				$("header")
+					.removeClass("nav-up")
+					.addClass("nav-down");
+			}
+		}
+		lastScrollTop = st;
+	}
 
 	function toggleNav() {
 		setActiveNav(!activeNav);
@@ -18,7 +47,7 @@ const Header = () => {
 	}
 
 	return (
-		<div className="header-wrapper">
+		<header className="header-wrapper nav-down">
 			<div className="title-wrapper">
 				<h2
 					onClick={() => {
@@ -80,7 +109,7 @@ const Header = () => {
 					Resume
 				</p>
 			</div>
-		</div>
+		</header>
 	);
 };
 
