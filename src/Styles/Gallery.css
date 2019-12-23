@@ -1,6 +1,17 @@
 .gallery-wrapper {
 	display: flex;
 	flex-wrap: wrap;
+	background-color: black;
+}
+.gallery-description {
+	background-color: rgba(2, 147, 130);
+	padding: 25px;
+	font-weight: bolder;
+	font-size: larger;
+	text-align: center;
+	width: 100%;
+	color: white;
+	z-index: 2;
 }
 
 .image-link {
@@ -8,10 +19,13 @@
 	margin: 0;
 	display: inherit;
 	width: 100vw;
+	margin: 300px 0px;
 }
 
 .gallery-image {
-	width: 49.999999%;
+	width: 80%;
+	margin: auto;
+	transform: translateZ(-1px) scale(1.5);
 }
 
 .gallery-image:hover {
