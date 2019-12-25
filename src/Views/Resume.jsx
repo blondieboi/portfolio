@@ -28,7 +28,7 @@ const Resume = () => {
 							</a>
 						</div>
 						<p>E: wallenjonatan@gmail.com</p>
-						<p>T: +46 (0) 70 184 4484</p>
+						<p>T: +46 (0) 76 189 0142</p>
 					</div>
 				</div>
 				<div className="resume-description">

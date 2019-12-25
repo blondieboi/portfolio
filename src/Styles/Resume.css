@@ -1,29 +1,26 @@
 .resume-wrapper {
-	padding: 20px 0px;
+	padding: 100px 0px;
 	background: #ebf8ff;
 }
 
 .resume-wrapper > div {
-	width: 80%;
+	width: 75%;
 	margin: auto;
 }
 
 .resume-header {
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 0px 10px;
 }
 
 .resume-header > div {
-	padding: 15px 30px;
+	padding: 15px 0px;
 }
 
 .resume-description {
-	max-width: 750px;
-	margin: auto;
-	padding: 15px 30px;
+	padding: 15px 0px;
 }
 
 .pic-wrapper > img {
@@ -51,7 +48,7 @@
 }
 
 .cv-wrapper {
-	padding: 15px 30px;
+	padding: 15px 0px;
 }
 
 .cv-item {
