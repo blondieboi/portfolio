@@ -17,7 +17,6 @@ const imageGallery = images.map(image => (
 const Gallery = () => {
 	return (
 		<div className="gallery-wrapper" id="gallery">
-			<div className="gallery-description">Environment Concepts</div>
 			{imageGallery}
 		</div>
 	);

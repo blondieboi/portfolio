@@ -3,15 +3,6 @@
 	flex-wrap: wrap;
 	background-color: black;
 }
-.gallery-description {
-	background-color: rgba(2, 147, 130);
-	padding: 25px;
-	font-weight: bolder;
-	font-size: larger;
-	text-align: center;
-	width: 100%;
-	color: white;
-}
 
 .image-link {
 	padding: 0;
