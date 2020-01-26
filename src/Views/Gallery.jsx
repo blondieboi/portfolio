@@ -5,11 +5,13 @@ function importAll(r) {
 	return r.keys().map(r);
 }
 const images = importAll(
-	require.context("../Assets/Gallery", false, /\.(png)$/)
+	require.context("../Assets/Gallery", false, /\.(webp)$/)
 );
 
-const imageGallery = images.map(image => (
-	<a key={image} href={image} target="_blank" className="image-link">
+const png = importAll(require.context("../Assets/Gallery", false, /\.(png)$/));
+
+const imageGallery = images.map((image, i) => (
+	<a key={image} href={png[i]} target="_blank" className="image-link">
 		<img alt={image} src={image} className="gallery-image" />
 	</a>
 ));

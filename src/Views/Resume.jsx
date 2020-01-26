@@ -1,9 +1,9 @@
 import React from "react";
 import "../Styles/Resume.css";
-import pic from "../Assets/profile.jpeg";
-import instagram from "../Assets/Social/instagram.png";
-import linkedin from "../Assets/Social/linkedin.png";
-import artstation from "../Assets/Social/artstation.png";
+import pic from "../Assets/profile.webp";
+import instagram from "../Assets/Social/instagram.webp";
+import linkedin from "../Assets/Social/linkedin.webp";
+import artstation from "../Assets/Social/artstation.webp";
 
 const Resume = () => {
 	return (

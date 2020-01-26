@@ -5,7 +5,7 @@
 }
 
 .landing-page::after {
-	background: url(../Assets/hero-image.jpg);
+	background: url(../Assets/Gallery/bb2.webp);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;

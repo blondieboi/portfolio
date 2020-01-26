@@ -17,7 +17,6 @@ const LandingPage = () => {
 		var scrollPercent = (lHeight - xPos) / lHeight;
 		if (scrollPercent >= 0) {
 			var alpha = 0.7 + (1 - scrollPercent) * 0.3;
-			console.log(scrollPercent);
 
 			$(".overlay").css("background-color", "rgba(0,0,0," + alpha + ")");
 		}
