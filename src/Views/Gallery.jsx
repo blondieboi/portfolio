@@ -9,7 +9,7 @@ const images = importAll(
 );
 
 const imageGallery = images.map(image => (
-	<a key={image} href={image} className="image-link">
+	<a key={image} href={image} target="_blank" className="image-link">
 		<img alt={image} src={image} className="gallery-image" />
 	</a>
 ));
